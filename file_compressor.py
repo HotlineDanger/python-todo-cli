@@ -1,4 +1,5 @@
 import PySimpleGUI as sg
+from zip_creator import make_archive
 
 label1 = sg.Text("Select files to compress")
 input1 = sg.Input()
@@ -17,4 +18,5 @@ while True:
     print(event, values)
     filepaths = values["files"].split(";")
     folder = values["folder"]
+    make_archive(filepaths, folder)
 window.close()
