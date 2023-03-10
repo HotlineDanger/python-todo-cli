@@ -1,4 +1,4 @@
-import functions
+from checklist_gui import functions
 import time
 
 now = time.strftime("%b %d, %Y %H:%M:%S")
