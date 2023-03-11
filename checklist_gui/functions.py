@@ -10,6 +10,12 @@ def get_todos(filepath="todos.txt"):
 
 
 def write_todos(todos_to_write, filepath="todos.txt"):
+    """
+        Write a list of todos
+        :param todos_to_write:
+        :param filepath:
+        :return:
+    """
     with open(filepath, "w") as file_local:
         file_local.writelines(todos_to_write)
 

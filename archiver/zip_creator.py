@@ -10,5 +10,5 @@ def make_archive(filepaths, dest_dir):
 
 
 if __name__ == "__main__":
-    make_archive(filepaths=["gui.py", "cli.py"], dest_dir="dest")
+    make_archive(filepaths=["gui.py", "cli.py"], dest_dir="../dest")
 
