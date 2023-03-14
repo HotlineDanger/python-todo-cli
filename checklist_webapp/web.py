@@ -1,3 +1,11 @@
 import streamlit as st
+import functions
 
-st.title("checklist app")
+todos = functions.get_todos()
+
+st.title("Productivity app")
+st.subheader("Improve your productivity")
+st.write("This app improves your productivity")
+
+for todo in todos:
+    st.checkbox(todo)
